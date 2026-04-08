@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h2> Employee  Managemnent System </h2>
+     <input type = "text" id = "name" placeholder = "Employee Name">
+     <input type = "text" id = "id" placeholder = "Employee ID ">
+     <input type = "number" id = "salary" placeholder = "Employee Salary">
+     <input type = "text" id = "dept" placeholder = "Count by  Department">
+
+     <br><br>
+     <button onclick="addEmployee()">Add Employee</button>
+     <button onclick="displayEmployee()">Display All</button>
+     <button onclick="filterEmployee()">salary>50000</button>
+     <button onclick="totalSalary()">Total Salary</button>
+     <button onclick="avgSalary()">Average Salary</button>
+     <button onclick="countDept()">Count by Department</button>
+
+     <div id = "output"></div>
+      <script src="script.js"></script>  
+</body>
+</html>
