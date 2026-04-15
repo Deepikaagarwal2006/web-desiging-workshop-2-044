@@ -68,3 +68,46 @@ console.log("Sqaure with Normal Function:" , sqaureFunc(4)); // Output: 16
     const squareArrow = n => n * n;
 
     console.log("Square with Arrow Function:", squareArrow(4)); // Output: 16
+
+
+
+    // ===============================================
+    // STEP:3 ARRAY BASICS 
+    // ===============================================
+
+    // SYNTAX:
+    // const arrayName = [element1, element2, ...];   
+
+    const numbersArrayBasic = [1, 2, 3, 4, 5];
+    console.log(numbersArrayBasic); // Output: [1, 2, 3, 4, 5]  
+
+
+    // ==============================================
+    // STEP: 4 ARRAY METHODS
+    // ==============================================
+    // forEach method : array ke har element par function apply karta hai
+    // SYNTAX:
+    // arrayName.forEach(function(element) {
+    //   // code to execute for each element
+    // }); 
+
+    //array.map (functionName)
+
+
+    function squareFuncArray(num1) {
+        return num1 * num1;
+    }
+
+
+    const sqaureArrayFunc = numbersArrayBasic.map(squareFuncArray);
+
+    console.log("Square with Function:", sqaureArrayFunc); // Output: [1, 4, 9, 16, 25] 
+        
+
+
+    numbersArrayBasic =[ 1, 2, 3, 4, 5]; // reasinging  for clarity 
+    numbersArrayBasic.map(num1 => num1 * num1); // using arrow function
+
+    const sqaureArrayArrow = numbersArrayBasic.map(num1 => num1 * num1);
+
+    console.log("Square with Arrow Function:", sqaureArrayArrow); // Output: [1, 4, 9, 16, 25]
