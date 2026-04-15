@@ -32,3 +32,39 @@ const greetExp = function() {
 
 
 console.log(greetExp()); // Output: Hello Students!
+
+/// function expression with parameters
+const sqaureFunc = function(n) {
+    return n * n;
+};
+
+console.log("Sqaure with Normal Function:" , sqaureFunc(4)); // Output: 16
+ // by template literals
+  console.log(`Sqaure with Normal Function: ${sqaureFunc(5)}`); // Output: 25
+
+   // ======================================
+   // STEP: 2 ARROW FUNCTION 
+   // ======================================
+
+   //SYNTAX:
+    // const functionName = (parameters) => expression;
+
+    const addNumbersArrow = (a2 , b2) => a2 + b2;
+
+    console.log("Arrow Function:", addNumbersArrow( 4 , 6)); // Output: 10
+
+
+    // EXPLANATION :
+    // - function keyword hata diya 
+    // - => use kiya 
+    // - direct return (implicit return)
+
+    // arrow function with no perameters 
+    const greetArrow = () => "Hello Students!";
+
+    console.log(greetArrow()); // Output: Hello Students!
+    
+    // arrow function with one parameter (parantheses optional)
+    const squareArrow = n => n * n;
+
+    console.log("Square with Arrow Function:", squareArrow(4)); // Output: 16
