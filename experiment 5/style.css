@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #eef2f3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.form-box input {
+  width: 260px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.form-box button,
+.button-group button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-box button:hover,
+.button-group button:hover {
+  background: #218838;
+}
+
+.button-group {
+  margin-bottom: 25px;
+}
+
+#output {
+  text-align: left;
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  min-height: 80px;
+}
+
+.employee-card {
+  background: #f8f9fa;
+  border-left: 5px solid #28a745;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.result-box {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .form-box input {
+    width: 100%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+}
