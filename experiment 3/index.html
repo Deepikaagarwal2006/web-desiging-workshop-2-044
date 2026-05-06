@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">FitLife</h1>
+
+      <button id="menu-btn" class="md:hidden border border-white px-3 py-1 rounded">
+        Menu
+      </button>
+
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 text-sm">
+          <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+          <li><a href="#programs" class="hover:text-blue-300">Programs</a></li>
+          <li><a href="#trainers" class="hover:text-blue-300">Trainers</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+      <ul class="flex flex-col gap-2 text-sm">
+        <li><a href="#home" class="block hover:text-blue-300">Home</a></li>
+        <li><a href="#programs" class="block hover:text-blue-300">Programs</a></li>
+        <li><a href="#trainers" class="block hover:text-blue-300">Trainers</a></li>
+        <li><a href="#contact" class="block hover:text-blue-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gradient-to-r from-blue-200 to-indigo-400 text-white text-center py-20 px-4">
+    <h2 class="text-4xl md:text-5xl font-bold">Transform Your Body & Mind</h2>
+    <p class="mt-4 text-base md:text-lg max-w-2xl mx-auto">
+      Join FitLife today and achieve your fitness goals with expert trainers.
+    </p>
+    <button class="mt-8 bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+      Join Now
+    </button>
+  </section>
+
+  <!-- Services Section -->
+  <section id="programs" class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Our Programs</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold text-red-500">Weight Training</h3>
+          <p class="mt-3 text-gray-600">
+            Build strength and muscle with guided weight training programs.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold text-orange-500">Yoga Classes</h3>
+          <p class="mt-3 text-gray-600">
+            Improve flexibility and mental wellness through yoga sessions.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6 text-center">
+          <h3 class="text-xl font-semibold text-red-500">Diet Plans</h3>
+          <p class="mt-3 text-gray-600">
+            Personalized diet plans to complement your fitness routine.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section id="trainers" class="py-16 px-4 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold">Expert Trainers</h2>
+      <p class="mt-4 text-gray-600">
+        Our certified trainers help you stay motivated and reach your fitness goals effectively.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gradient-to-r from-blue-200 to-indigo-400 text-white text-center py-8 px-4">
+    <p>&copy; 2026 FitLife | All Rights Reserved</p>
+    <p class="mt-2 text-sm">Contact: info@fitlife.com</p>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
